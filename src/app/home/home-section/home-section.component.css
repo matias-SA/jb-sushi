@@ -1,0 +1,53 @@
+.section {
+  background-image: url(../../../assets/sushi-rolls.jpg);
+  background-attachment: scroll, fixed;
+  background-color: #666;
+  background-position: top left, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  color: #fff;
+  padding: 21em 0 26.8em 0;
+  text-align: center;
+  margin: -127px auto;
+  height: 100vh;
+}
+.jb {
+  font-family: "Cinzel", serif;
+  font-size: 2.813rem;
+  font-weight: 600;
+}
+.sushi {
+  font-family: "Jonathan", serif;
+  font-size: 4rem;
+  vertical-align: revert;
+  font-weight: 600;
+}
+.logo {
+  border-radius: 100%;
+  border: 8px solid white;
+  display: inline-table;
+  width: 11%;
+  background-color: black;
+  margin-top: 20px;
+}
+.logo-2 {
+  margin: 15px 0px;
+}
+.logo:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  transition: 1s;
+}
+.subtitle {
+  color: #ffbb7a;
+  font-family: "Cinzel Extra Bold", serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.title {
+  font-family: "Cinzel Extra Bold", serif;
+  font-size: 5.5rem;
+  font-weight: 600;
+  margin-top: -20px;
+}

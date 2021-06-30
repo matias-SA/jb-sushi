@@ -1,0 +1,78 @@
+.box {
+  margin-top: 127px;
+}
+.box1 {
+  padding: 4.5rem 0px;
+  max-width: 760px;
+}
+.title {
+  font-size: 3.2rem;
+  font-family: "Cinzel Extra Bold", serif;
+  font-weight: 800;
+}
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 43px;
+  font-family: cursive, serif;
+}
+.box2 {
+  padding: 3.5rem 0px;
+  background-color: black;
+  color: white;
+}
+.image {
+  filter: invert();
+}
+.galery {
+  height: 45vw;
+}
+.imege-box {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 50%;
+}
+.left {
+  background-image: url("../../../assets/sushi2.jpeg");
+}
+.right {
+  background-image: url(../../../assets/sushi4.jpeg);
+}
+.float-btn {
+  width: 12rem;
+  height: 2.3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #6c757d;
+  font-size: 2rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: 0px none;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 19%), -2px -2px 10px rgb(0 0 0 / 19%);
+  font-size: 100%;
+  z-index: 1;
+}
+.open {
+  width: 62.5rem;
+  height: calc(100% - (16px * 2));
+  background-color: white;
+  display: block;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #6c757d;
+  font-size: 2rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: 0px none;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 19%), -2px -2px 10px rgb(0 0 0 / 19%);
+  font-size: 100%;
+  z-index: 1;
+}
+.close {
+  display: none;
+}

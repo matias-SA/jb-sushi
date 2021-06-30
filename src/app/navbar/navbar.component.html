@@ -1,0 +1,52 @@
+<div *ngIf="currentRoute != '/shop'; else elseBlock">
+    <nav class="navbar navbar-expand-lg navbar-style mx-auto">
+        <div class="container-fluid box">
+            <a class="navbar-brand" routerLink="/"><span class="jb">JB</span><span
+                    class="sushi align-baseline">Sushi</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/shop">Pedinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rouuterLinkActivate="active" (click)="toAbout()">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rouuterLinkActivate="active" (click)="toMenu()">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rouuterLinkActivate="active" (click)="toGallery()">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rouuterLinkActivate="active" (click)="toContact()">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<ng-template #elseBlock>
+    <div class="text-center box-else pb-5 pt-2">
+        <div class="navbar-style mx-auto">
+            <a class="navbar-brand" routerLink="/"><span class="jb">JB</span><span
+                    class="sushi align-baseline">Sushi</span></a>
+            <div class="d-flex justify-content-around mb-3">
+                <div>Envio gratis</div>
+                <div><i class="far fa-clock"></i> 17:00 - 21:00</div>
+                <div>Pedidos CABA</div>
+            </div>
+            <div>
+                Estimado cliente, puede elegir entre llevar o pasar a buscar su pedido, en ambos casos deberá hacer el pedido
+                 online y pagar. Los pedidos se hacen con una semana de anticipacion. Si todos nuestros repartidores están en camino, la opción de elegir la entrega
+                caducará y usted solo podrá elegir cobrar.
+            </div>
+        </div>
+    </div>
+</ng-template>

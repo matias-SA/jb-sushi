@@ -1,0 +1,27 @@
+<div class="box">
+    <div class="container">
+        <img class="d-block mx-auto mb-4" src="../../../assets/japan-icon3.png" width="50px" alt="">
+        <h2 class="title text-center mb-4">MENU</h2>
+        <div *ngFor="let seccion of secciones">
+            <h2 class="text-center mb-4 title1">{{seccion.seccionName}}</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+                <div class="col my-auto" *ngFor="let title of seccion.menus">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title px-3">{{ title.title }}</h5>
+                            <div *ngFor="let product of title.products" class="py-3">
+                                <div class="col d-flex justify-content-between title1">
+                                    <span class="">{{ product.productTitle}}</span>
+                                    <span>${{ product.price }}</span>
+                                </div>
+                                <div class="col productDetail">
+                                    {{ product.productDetail }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

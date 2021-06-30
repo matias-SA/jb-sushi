@@ -1,0 +1,22 @@
+<div class="row g-0" (click)="product.show =! product.show">
+    <div class="col-md-9">
+        <div class="card-body">
+            <h5 class="card-title">{{product.productTitle}}</h5>
+            <p class="card-text">{{product.productDetail}}</p>
+            <p class="card-text">$ {{product.price}}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <img src="https://s3-media4.fl.yelpcdn.com/bphoto/EbPqr2HGg9f5Ulz33glsqQ/180s.jpg" alt="...">
+    </div>
+</div>
+<div *ngIf="product.show" class="mx-auto card m-4 p-2 box-sumary">
+    <div class="text-center box-detail py-2 d-flex">
+        <div class="my-auto" >
+            <button class="btn-quantity" (click)="product.pillQuantity = product.pillQuantity - 1" [ngClass]="{'disabled': product.pillQuantity == 1}">-</button>
+            {{product.pillQuantity}}
+            <button class="btn-quantity" (click)="product.pillQuantity = product.pillQuantity + 1">+</button>
+        </div>
+        <button (click)="addProductToCart(product)" (click)="product.show =! product.show" class="button-add btn btn-dark">Añadir al carrito</button>
+    </div>
+</div>

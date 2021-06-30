@@ -1,0 +1,10 @@
+<div class="py-4 px-4 box">
+  <div *ngFor="let seccion of secciones">
+      <div *ngFor="let menu of seccion.menus">
+        <h2 class="title">{{menu.title}}</h2>
+        <div *ngFor="let product of menu.products">
+          <app-product class="card mb-4 product" [product]="product" (productAdded)="addProductToCart($event)"></app-product>
+        </div>
+      </div>
+  </div>
+</div>

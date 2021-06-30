@@ -1,0 +1,28 @@
+<div *ngIf="hasSome" class="rounded border-4 px-4 pt-4 pb-2 box d-flex flex-column justify-content-between">
+  <a type="button" class="btn-close ml-auto" [ngClass]="{'show-button-close': show===false}" (click)="show = !show"
+    (click)="showButtonsCart = !showButtonsCart" aria-label="Close"><i class="fas fa-times"></i></a>
+  <div class="d-flex justify-content-between" *ngIf="showButtonsCart">
+    <a class="btn btn-dark btn-resumen d-flex justify-content-between" (click)="show = !show"
+      (click)="showButtonsCart = !showButtonsCart">
+      <div class="cartQuantity">{{totalQuantity}}</div> Ver Pedido <div>$ {{price}}</div>
+    </a>
+    <a class="btn btn-light">Checkout</a>
+  </div>
+  <div *ngIf="show">
+    <h1 class="title"> Su pedido </h1>
+    <div *ngFor=" let product of cartProductList" class="d-flex justify-content-between pb-2 resume">
+      <div>
+        <button (click)="lessQuantity(product)">x</button>
+        <span *ngIf="product.quantity != 1" class="mr-1">{{product.quantity}}</span>
+        {{product.productTitle}}
+      </div>
+      <div>
+        $ {{product.price * product.quantity}}
+      </div>
+    </div>
+    <div class="total pt-2 pb-1 d-flex justify-content-between">
+      <div>Total</div>
+      <strong>$ {{price}}</strong>
+    </div>
+  </div>
+</div>

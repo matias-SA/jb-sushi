@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Jonathan;
+  src: url("./assets/fonts/Jonathan/Jonathan.otf");
+}
+@font-face {
+  font-family: "Cinzel Medium";
+  src: url("./assets/fonts/Cinzel/Cinzel-Medium.ttf");
+}
+@font-face {
+  font-family: "Cinzel Extra Bold";
+  src: url("./assets/fonts/Cinzel/Cinzel-ExtraBold.ttf");
+}
+/* @import "~bootstrap/dist/css/bootstrap.css"; */

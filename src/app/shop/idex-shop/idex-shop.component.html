@@ -1,0 +1,8 @@
+<div class="pt-4">
+    <h2 class="text-center title pb-2"> <i class="fas fa-shopping-cart"></i>TAKE AWAY</h2>
+    <div class="row box-1 mx-auto">
+        <app-product-list class="col-sm-12" [secciones]="secciones" (productAdded)="addProductToCart($event)">
+        </app-product-list>
+        <app-shopping-cart class="resumen-cart" [cartProductList]="cartProductList"></app-shopping-cart>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.header {
+  background-color: black;
+}
+i {
+  color: white;
+  font-size: 1.5em;
+}
+button {
+  border: none;
+  padding: 6px 6px;
+}
+.jb {
+  font-family: "Cinzel Medium", serif;
+  font-size: 3.5rem;
+  margin-right: 10px;
+}
+.sushi {
+  font-family: "Jonathan", serif;
+  font-size: 3.6rem;
+  vertical-align: revert;
+}
+.box {
+  padding: 3rem 0px;
+  background-color: black;
+  color: white;
+}

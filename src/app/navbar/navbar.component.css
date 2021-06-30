@@ -1,0 +1,28 @@
+* {
+  color: white !important;
+}
+.jb {
+  font-family: "Cinzel Medium", serif;
+  font-size: 3.5rem;
+  margin-right: 10px;
+}
+.sushi {
+  font-family: "Jonathan", serif;
+  font-size: 3.6rem;
+  vertical-align: revert;
+}
+.navbar {
+  padding: 0rem 1rem !important;
+}
+li {
+  color: white;
+}
+.navbar-style {
+  max-width: 940px;
+}
+.box {
+  margin-top: 29px;
+}
+.box-else {
+  background-color: black;
+}
