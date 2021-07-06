@@ -1,5 +1,7 @@
 # JBsushi
 
+Pagina web para un restaurante de Sushi, diseño propio. Tecnologias utilizadas Angular y Bootstrap.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
 ## Development server
